@@ -8,7 +8,7 @@ export default function Card() {
   return (
     <div>
         <Heading/>
-        <Count/>
+        <Count number= {5} />
         <ResetButton/>
         <CountButtons/>
         
