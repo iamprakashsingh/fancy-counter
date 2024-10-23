@@ -7,12 +7,13 @@ import ResetButton from "./ResetButton";
 
 export default function Card() {
     const [count,setCount] = useState(0);
+    const locked = count===5;
   return (
-    <div className="card">
-        <Heading/>
+    <div className={`card ${locked?'card-limit':""}`}>
+        <Heading locked={locked}/>
         <Count number= {count} />
         <ResetButton setCount={setCount}/>
-        <CountButtons setCount={setCount}/>
+        <CountButtons setCount={setCount} locked={locked}/>
         
     </div>
   )
