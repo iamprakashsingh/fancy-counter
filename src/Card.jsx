@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Count from "./Count";
-import CountButtons from "./CountButtons";
+import CountButtons from "./ButtonContainer";
 import Heading from "./Heading";
 import ResetButton from "./ResetButton";
 
