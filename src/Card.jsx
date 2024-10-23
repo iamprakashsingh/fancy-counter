@@ -1,3 +1,6 @@
+//i have learnt prop dealing also which can be used to pass data from parent to child component
+//so in as we are passing all the props to ButtonContainer and through it to CountButton
+//we can use prop drilling here.
 import { useState, useEffect } from "react";
 import Count from "./Count";
 import CountButtons from "./ButtonContainer";
