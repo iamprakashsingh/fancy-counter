@@ -1,5 +1,5 @@
 export default function Count({number}) {
   return (
-    <p>{number}</p>
+    <p className="count">{number}</p>
   )
 }
