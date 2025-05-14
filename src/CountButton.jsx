@@ -5,8 +5,8 @@ export default function CountButton({type,setCount,locked}){
     
     const handler = (event) => {
         setCount((prev)=>{
-            if(type === "minus" && prev>=0){
-                return (prev==0)?0: prev-1;
+            if(type === "minus" && prev>0){
+                return (prev===0)?0: prev-1;
             }else{
                 return prev+1;
             }
